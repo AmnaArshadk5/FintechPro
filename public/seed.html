@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seed App State</title>
+  </head>
+  <body>
+    <script>
+      const profile = {
+        name: "Ayesha Khan",
+        riskTolerance: "moderate",
+        investmentHorizon: "long",
+        monthlyCapacity: 85000,
+        liquidityPreference: "moderate",
+        investmentGoal: "wealth",
+      };
+
+      const portfolio = {
+        items: [
+          {
+            id: 9,
+            title: "WD 2TB Elements Hard Drive",
+            image: "https://discountstore.pk/cdn/shop/files/WESTERN-DIGITAL-HARD-DRIVE-ELEMENTS-PORTABLE-WDBU6Y0020BBK-WESN-2TB-BLACK.jpg?v=1753877649",
+            category: "investment",
+            riskLevel: "medium",
+            expectedReturn: 12,
+            liquidity: "moderate",
+            timeHorizon: "medium",
+            minInvestment: 17900,
+            amount: 30000,
+          },
+          {
+            id: 5,
+            title: "John Hardy Naga Gold & Silver Bracelet",
+            image: "https://www.reneetaylorgallery.com/cdn/shop/products/naga-gold-silver-dragon-station-bracelet-bz65032-john-hardy-2_2400x.jpg?v=1599928600",
+            category: "savings",
+            riskLevel: "low",
+            expectedReturn: 5,
+            liquidity: "easy",
+            timeHorizon: "short",
+            minInvestment: 194600,
+            amount: 55000,
+          }
+        ]
+      };
+
+      localStorage.setItem("userProfile", JSON.stringify(profile));
+      localStorage.setItem("fintech_portfolio", JSON.stringify(portfolio));
+
+      const params = new URLSearchParams(window.location.search);
+      const target = params.get("target") || "/";
+      window.location.replace(target);
+    </script>
+  </body>
+</html>

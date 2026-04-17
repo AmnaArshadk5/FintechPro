@@ -1,20 +1,21 @@
-import { useState } from "react";
-import { UserProfileContext } from "./UserProfileContextValue";
+import { createContext, useState, useEffect } from "react";
+
+export const UserProfileContext = createContext();
 
 export function UserProfileProvider({ children }) {
-  const [profile, setProfile] = useState(() => {
-    const savedProfile = localStorage.getItem("userProfile");
-    if (!savedProfile) {
-      return null;
-    }
+  // Initialize state with null or data from localStorage
+  const [profile, setProfile] = useState(null);
 
-    try {
-      return JSON.parse(savedProfile);
-    } catch (error) {
-      console.error("Error parsing saved profile:", error);
-      return null;
+  useEffect(() => {
+    const savedProfile = localStorage.getItem("userProfile");
+    if (savedProfile) {
+      try {
+        setProfile(JSON.parse(savedProfile));
+      } catch (error) {
+        console.error("Error parsing saved profile:", error);
+      }
     }
-  });
+  }, []);
 
   const updateProfile = (data) => {
     setProfile(data);

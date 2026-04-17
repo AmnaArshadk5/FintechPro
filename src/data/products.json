@@ -1,0 +1,22 @@
+[
+  { "id": 1, "title": "Fjallraven - Foldsack No. 1 Backpack", "price": 109.95, "category": "men's clothing" },
+  { "id": 2, "title": "Mens Casual Premium Slim Fit T-Shirts", "price": 22.3, "category": "men's clothing" },
+  { "id": 3, "title": "Mens Cotton Jacket", "price": 55.99, "category": "men's clothing" },
+  { "id": 4, "title": "Mens Casual Slim Fit", "price": 15.99, "category": "men's clothing" },
+  { "id": 5, "title": "John Hardy Naga Gold & Silver Bracelet", "price": 695, "category": "jewelery" },
+  { "id": 6, "title": "Solid Gold Petite Micropave", "price": 168, "category": "jewelery" },
+  { "id": 7, "title": "White Gold Plated Princess", "price": 9.99, "category": "jewelery" },
+  { "id": 8, "title": "Pierced Owl Rose Gold Plated", "price": 10.99, "category": "jewelery" },
+  { "id": 9, "title": "WD 2TB Elements Hard Drive", "price": 64, "category": "electronics" },
+  { "id": 10, "title": "SanDisk SSD PLUS 1TB", "price": 109, "category": "electronics" },
+  { "id": 11, "title": "Silicon Power 256GB SSD", "price": 109, "category": "electronics" },
+  { "id": 12, "title": "WD 4TB Gaming Drive", "price": 114, "category": "electronics" },
+  { "id": 13, "title": "Acer SB220Q bi 21.5 inches", "price": 599, "category": "electronics" },
+  { "id": 14, "title": "Samsung 49-Inch Curved Gaming Monitor", "price": 999.99, "category": "electronics" },
+  { "id": 15, "title": "BIYLACLESEN Women's Snowboard Jacket", "price": 56.99, "category": "women's clothing" },
+  { "id": 16, "title": "Lock and Love Women's Faux Leather Jacket", "price": 29.95, "category": "women's clothing" },
+  { "id": 17, "title": "Rain Jacket Women Windbreaker", "price": 39.99, "category": "women's clothing" },
+  { "id": 18, "title": "MBJ Women's Solid Short Sleeve", "price": 9.85, "category": "women's clothing" },
+  { "id": 19, "title": "Opna Women's Short Sleeve Moisture", "price": 7.95, "category": "women's clothing" },
+  { "id": 20, "title": "DANVOUY Womens T Shirt Casual Cotton", "price": 12.99, "category": "women's clothing" }
+]
