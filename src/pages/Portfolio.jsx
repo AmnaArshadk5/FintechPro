@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { PortfolioContext } from "../context/PortfolioContextValue";
+import { PortfolioContext } from "../context/PortfolioContext";
 import { calculatePortfolioStats } from "../utils/portfolioutils";
-import { Link } from "react-router-dom"; // Essential import to prevent the crash
+import { Link } from "react-router-dom"; 
 
 export default function Portfolio() {
   const { portfolio, removeFromPortfolio } = useContext(PortfolioContext);
   
-  // Cleanly access the items array from our context structure
   const items = portfolio?.items || [];
   const stats = calculatePortfolioStats(items);
 
@@ -27,7 +26,6 @@ export default function Portfolio() {
     <div style={{ padding: "100px 20px", maxWidth: "1100px", margin: "auto" }}>
       <h1 style={{ fontWeight: "900", marginBottom: "30px" }}>Executive Portfolio Summary</h1>
 
-      {/* DASHBOARD STATS */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px", marginBottom: "40px" }}>
         <div style={statBoxStyle}>
           <small style={{ color: "#64748b", fontWeight: "bold" }}>TOTAL CAPITAL</small>
