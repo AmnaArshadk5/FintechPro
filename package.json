@@ -1,0 +1,40 @@
+{
+  "name": "fintech-pro",
+  "private": true,
+  "version": "1.0.0",
+  "description": "FinTechPro - Dynamic Financial Product Discovery Platform. A React application featuring intelligent product filtering, personalized recommendations, portfolio management, and advanced financial logic.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext js,jsx",
+    "format": "prettier --write src/**/*.{js,jsx,css}"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "react",
+    "fintech",
+    "financial",
+    "investment",
+    "portfolio",
+    "recommendation-engine",
+    "filtering",
+    "dashboard"
+  ],
+  "author": "FinTechPro Development Team",
+  "license": "MIT"
+}
