@@ -1,41 +1,49 @@
 {
  "homepage": "https://amnaarshadk5.github.io/FintechPro/",
-  "name": "fintech-pro",
-  "private": true,
-  "version": "1.0.0",
-  "description": "FinTechPro - Dynamic Financial Product Discovery Platform. A React application featuring intelligent product filtering, personalized recommendations, portfolio management, and advanced financial logic.",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src --ext js,jsx",
-    "format": "prettier --write src/**/*.{js,jsx,css}"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.28.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.0",
-    "vite": "^5.2.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "keywords": [
-    "react",
-    "fintech",
-    "financial",
-    "investment",
-    "portfolio",
-    "recommendation-engine",
-    "filtering",
-    "dashboard"
-  ],
-  "author": "FinTechPro Development Team",
-  "license": "MIT"
+ "name": "fintech-pro",
+ "private": true,
+ "version": "1.0.0",
+ "description": "FinTechPro - Dynamic Financial Product Discovery Platform. A React application featuring intelligent product filtering, personalized recommendations, portfolio management, and advanced financial logic.",
+ "type": "module",
+ "scripts": {
+  "dev": "vite",
+  "doctor": "node scripts/doctor.mjs",
+  "build": "vite build",
+  "preview": "vite preview",
+  "lint": "eslint src --ext js,jsx",
+  "format": "prettier --write src/**/*.{js,jsx,css}"
+ },
+ "dependencies": {
+  "react": "^18.3.1",
+  "react-dom": "^18.3.1",
+  "react-router-dom": "^6.28.0"
+ },
+ "devDependencies": {
+  "@eslint/js": "^9.0.0",
+  "@types/react": "^18.3.1",
+  "@types/react-dom": "^18.3.0",
+  "@vitejs/plugin-react": "^4.3.0",
+  "eslint": "^9.0.0",
+  "eslint-plugin-react-hooks": "^5.0.0",
+  "eslint-plugin-react-refresh": "^0.4.0",
+  "gh-pages": "^6.3.0",
+  "globals": "^15.0.0",
+  "prettier": "^3.0.0",
+  "vite": "^5.2.0"
+ },
+ "engines": {
+  "node": ">=18.0.0 <22"
+ },
+ "keywords": [
+  "react",
+  "fintech",
+  "financial",
+  "investment",
+  "portfolio",
+  "recommendation-engine",
+  "filtering",
+  "dashboard"
+ ],
+ "author": "FinTechPro Development Team",
+ "license": "MIT"
 }

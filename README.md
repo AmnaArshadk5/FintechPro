@@ -200,7 +200,8 @@ fintech-pro/
 ## 🚀 Installation
 
 ### Prerequisites
-- Node.js 18+ and npm/yarn
+- Node.js 20 LTS (recommended). Node.js 18–21 should also work.
+- If you see `Error: spawn EPERM` when running Vite, switch to Node.js 20 and reinstall dependencies.
 
 ### Setup
 
@@ -210,6 +211,9 @@ cd fintech-pro
 
 # 2. Install dependencies
 npm install
+
+# (Optional) Check your environment if dev/build fails
+npm run doctor
 
 # 3. Start development server
 npm run dev

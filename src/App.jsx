@@ -19,6 +19,7 @@ function App() {
     <UserProfileProvider>
       <PortfolioProvider>
         <BrowserRouter 
+          basename={import.meta.env.BASE_URL}
           future={{ 
             v7_startTransition: true, 
             v7_relativeSplatPath: true 
@@ -26,7 +27,7 @@ function App() {
         >
           <Navbar />
 
-          <main style={{ minHeight: "80vh", display: "flex", flexDirection: "column" }}>
+          <main className="app-main" style={{ minHeight: "80vh", display: "flex", flexDirection: "column" }}>
             <Routes>
               <Route path="/" element={<Home />} />
               

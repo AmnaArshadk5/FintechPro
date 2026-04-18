@@ -4,7 +4,6 @@ export default function Footer() {
   return (
     <footer style={footerWrapper}>
       <div style={footerContainer}>
-        
         <div style={columnStyle}>
           <h2 style={{ color: "#22c55e", margin: "0 0 15px 0", fontWeight: "900", letterSpacing: "-1px" }}>
             FinTech<span style={{ color: "#fff" }}>Pro</span>
@@ -16,16 +15,29 @@ export default function Footer() {
 
         <div style={columnStyle}>
           <h4 style={headingStyle}>Platform</h4>
-          <Link to="/products" style={linkStyle}>Marketplace</Link>
-          <Link to="/recommendations" style={linkStyle}>Smart Matches</Link>
-          <Link to="/portfolio" style={linkStyle}>Executive Summary</Link>
+          <Link to="/products" style={linkStyle}>
+            Marketplace
+          </Link>
+          <Link to="/recommendations" style={linkStyle}>
+            Smart Matches
+          </Link>
+          <Link to="/portfolio" style={linkStyle}>
+            Executive Summary
+          </Link>
         </div>
-
-
       </div>
 
       <div style={bottomBar}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "10px" }}>
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: "10px",
+          }}
+        >
           <span>© 2026 FinTechPro Digital Investments. All rights reserved.</span>
           <div style={{ display: "flex", gap: "20px" }}>
             <span style={{ cursor: "pointer" }}>Privacy Policy</span>
@@ -37,9 +49,8 @@ export default function Footer() {
   );
 }
 
-
 const footerWrapper = {
-  background: "#0f172a", 
+  background: "#0f172a",
   color: "#fff",
   marginTop: "80px",
   borderTop: "1px solid #1e293b",
@@ -76,7 +87,6 @@ const linkStyle = {
   transition: "color 0.2s ease",
 };
 
-
 const bottomBar = {
   background: "#020617",
   padding: "20px",
@@ -84,3 +94,4 @@ const bottomBar = {
   color: "#64748b",
   borderTop: "1px solid #1e293b",
 };
+

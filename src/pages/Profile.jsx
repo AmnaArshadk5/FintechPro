@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { UserProfileContext } from "../context/UserProfileContextValue";
+import { UserProfileContext } from "../context/UserProfileContext";
 import { useNavigate } from "react-router-dom";
 
 const riskOptions = [
